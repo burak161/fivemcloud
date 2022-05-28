@@ -1,0 +1,186 @@
+<html>
+
+  
+<head>
+  
+    <title>Arcenia Hırsız Polis Wiki</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<meta charset="UTF-8"> 
+	<link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+  </head>
+
+  
+  
+   <body>
+   
+     <div id="menucont">
+	  
+	  <ul>
+	    <li><a class="active" onClick="OnClickSistemList(1)" href="#anasayfa"><i class="fa fa-home"></i> Ana Sayfa</a></li>
+		<li><a onclick="OnClickSistem()" href="#sistemler"><i class="fa fa-bars"></i> Sistemler</a>
+		 
+		  <div id="menusistem">
+		    <ul>
+			 <li><a onClick="OnClickSistemList(2)" href="#"><i class="fa fa-home"></i> Ev Sistemi</a></li>
+			 <li><a onClick="OnClickSistemList(3)" href="#"><i class="fa fa-car"></i> Araç Sistemi</a></li>
+			 <li><a onClick="OnClickSistemList(4)" href="#"><i class="fa fa-television"></i> Ev Geliştirmeleri</a></li>
+			 <li><a onClick="OnClickSistemList(5)" href="#"><i class="fa fa-wrench"></i> Sunucu Geliştirmeleri</a></li>
+			 <li><a onClick="OnClickSistemList(6)" href="#"><i class="fa fa-money"></i> Dükkan Soygunları</a></li>
+			 <li><a onClick="OnClickSistemList(7)" href="#"><i class="fa fa-street-view"></i> Mental Durum</a></li>
+			 <li><a onClick="OnClickSistemList(8)" href="#"><i class="fa fa-star"></i> Aranma Seviyesi</a></li>
+			</ul>
+		  </div>
+		</li>
+		<li><a onclick="OnClickMeslek()" href="#meslekler"><i class="fa fa-bus"></i> Meslekler</a>
+		 
+		 <div id="menumeslek">
+		  <ul>
+		   <li><a onClick="OnClickSistemList(9)" href="#"><i class="fa fa-angle-right"> Seri Katil</i></a></li>
+		   <li><a onClick="OnClickSistemList(10)" href="#"><i class="fa fa-angle-right"> Uyuşturucu Satıcısı</i></a></li>
+		   <li><a onClick="OnClickSistemList(11)" href="#"><i class="fa fa-angle-right"> Gaspçı</i></a></li>
+		   <li><a onClick="OnClickSistemList(12)" href="#"><i class="fa fa-angle-right"> Terorist</i></a></li>
+		   <li><a onClick="OnClickSistemList(13)" href="#"><i class="fa fa-angle-right"> Hacker</i></a></li>
+		  </ul>
+		</div>
+		 
+		
+		</li>
+		<li><a onClick="OnClickSistemList(14)" href="#"><i class="fa fa-question-circle"></i> S.S.S</a></li>
+		<li><a href="#kurallar"><i class="fa fa-gavel"></i> Kurallar</a></li>
+	  </ul>
+	 
+	 
+	 </div>
+	 
+	 <div class="infocont">
+	  <div id="imagecont">
+	  </div>
+	  <h3 id="infohead">Arcenia Hırsız Polis</h3>
+	  
+	  <p id="info">Arcenia Hırsız Polis projesinin ilk adımları 2018 yılının mayıs ayında atılmış olup haziran ayında oyunculara sunulan proje 1 ay içerisinde hazırlandı<br><br> Projemiz 20 temmuz 2018 Tarihinde yeni sistemler ile hizmete girdi. Arcenia Hırsız Polis yenilikçi fikirleri tecrübeli yönetim ekibi ile sizlere vazgeçemeyeceğiniz bir oyun ortamı sunuyor<br><br> Keyifli ve adaletli bir oyun deneyimi yaşamak istiyorsanız buraya tıklayarak forum sunucu bilgilerini öğrenebilir sizde aramıza katılabilirsiniz</p>
+	 </div>
+   
+  
+     <script>
+	 
+	  var _sClickObject = [];
+	  _sClickObject[0] = 0;
+	  _sClickObject[1] = 0;
+      function OnClickSistem(clicked) 
+	  {
+       if(_sClickObject[0] == 0) document.getElementById("menusistem").style.display = "block",_sClickObject[0] = 1;
+ 	   else if(_sClickObject[0] == 1) document.getElementById("menusistem").style.display = "none",_sClickObject[0] = 0;
+      }
+      function OnClickMeslek() 
+	  {
+       if(_sClickObject[1] == 0) document.getElementById("menumeslek").style.display = "block",_sClickObject[1] = 1;
+	   else if(_sClickObject[1] == 1) document.getElementById("menumeslek").style.display = "none",_sClickObject[1] = 0;
+      }
+      function OnClickSistemList(clicked) 
+	  { 
+	   var box = document.getElementById("imagecont");
+       box.style.animationName = null;
+       box.offsetHeight; 
+       box.style.animationName = "fade";
+       if(clicked == 1)
+	   {
+	    document.getElementById("infohead").innerHTML = "Arcenia Hırsız Polis";
+		document.getElementById("info").innerHTML = "Arcenia Hırsız Polis projesinin ilk adımları 2018 yılının mayıs ayında atılmış olup haziran ayında oyunculara sunulan proje 1 ay içerisinde hazırlandı<br><br> Projemiz 20 temmuz 2018 Tarihinde yeni sistemler ile hizmete girdi. Arcenia Hırsız Polis yenilikçi fikirleri tecrübeli yönetim ekibi ile sizlere vazgeçemeyeceğiniz bir oyun ortamı sunuyor<br><br> Keyifli ve adaletli bir oyun deneyimi yaşamak istiyorsanız buraya tıklayarak forum sunucu bilgilerini öğrenebilir sizde aramıza katılabilirsiniz</p>";
+		document.getElementById("imagecont").style.backgroundImage = "url('image.jpg')"; 
+        document.getElementById("imagecont").style.AnimationName = "fade";
+	   }
+	   else if(clicked == 2)
+	   {
+	    document.getElementById("infohead").innerHTML = "Ev Sistemi";
+		document.getElementById("info").innerHTML = "Ev almak için öncelikle paranız olmalıdır. Harita da yeşil ev iconu olan evin yanına gidip /satinal yazınız. Evi aldıktan sonra evinizin yanına gidip /giris yazınız.<br><br> /evmenu komutunu kullanarak Evinize başka oyuncuların girmesi için kapınızı açıp kapatabilir /evmenu yazarak ev İnterior alabilir Aracınızı veya evinizi sisteme satabilir, aracın yarı fiyatını alabilirsiniz.";
+		document.getElementById("imagecont").style.backgroundImage = "url('image2.jpg')"; 
+	   }
+	   else if(clicked == 3)
+	   {
+	    document.getElementById("infohead").innerHTML = "Araç Sistemi";
+		document.getElementById("info").innerHTML = "Araç satın almak için ilk önce ev  satın almanız gerekir. Galerideki bilgisayarı kullanarak kendinize en uygun aracı satın alabilirsiniz. Bilgisayarda aracı değiştirmek için num4 ve num6 araç satın almak veya menüyü kapatmak için n tuşlarını kullanabilirsiniz. Araç satın aldıktan sonra aracınız evinize çekilecektir /aracgetir yazarak aracınınız getirebilirsiniz. Galeriyi /gps yardımı ile kolayca bulabilirsiniz";
+		document.getElementById("imagecont").style.backgroundImage = "url('image3.jpg')"; 
+	   }
+	   else if(clicked == 4)
+	   {
+	    document.getElementById("infohead").innerHTML = "Ev Geliştirmeleri";
+		document.getElementById("info").innerHTML = "Evinizdeyken /evmenu komutu ile evinizi geliştirebilirsiniz.veya eviniz için bütçenize uygun interiorlerden birini satın alabilirsiniz";
+		document.getElementById("imagecont").style.backgroundImage = "url('image4.jpg')"; 
+	   }
+	   else if(clicked == 5)
+	   {
+	    document.getElementById("infohead").innerHTML = "Sunucu Geliştirmeleri";
+		document.getElementById("info").innerHTML = "Sunucumuza yeni sistemler ekliyoruz BETA 1.2 gelicek sistemler mobilya sistemi,iş Yeri sistemi,Pilot mesleği yakın zamanda diğer BETA güncellemeler yayınlancaktır.";
+		document.getElementById("imagecont").style.backgroundImage = "url('image5.jpg')"; 
+	   }
+	   else if(clicked == 6)
+	   {
+	    document.getElementById("infohead").innerHTML = "Dükkan Soygunları";
+		document.getElementById("info").innerHTML = "Herhangi bir soygun mekanına girip aktöre silah ile nişan alınız. Aktöre bir kere silah  ile nişan almanız yeterli. Soygun bitmeden mekandan çıkarsanız paranın hepsini alamazsınız.";
+		document.getElementById("imagecont").style.backgroundImage = "url('image6.jpg')"; 
+	   }
+	   else if(clicked == 7)
+	   {
+	    document.getElementById("infohead").innerHTML = "Mental Durum";
+		document.getElementById("info").innerHTML = "Eger bir kişiyi öldürürseniz mental durumunuz artar Mental durumunuz artarsa Silah ücretleri , zirh ücreti ve hapis süreniz katlanır. Mental durumunuzu düşürmek için otobüs şöförü,çöpçü,pilot,güvenlik görevlisi gibi legal meslekleri yapabilirsiniz";
+		document.getElementById("imagecont").style.backgroundImage = "url('image7.jpg')"; 
+	   }
+	   else if(clicked == 8)
+	   {
+	    document.getElementById("infohead").innerHTML = "Aranma Seviyesi";
+		document.getElementById("info").innerHTML = "Suç işledikçe aranma seviyeniz artar. Aranma Seviyesini silmek için herhangi bir araca binip spray'e girmeniz aracınızı yenilemeniz gerekir Harita da spray  iconu olan yerlerde sildirebilirsiniz. veya Polis Frank Tenpenny'den aranmanızı  100.000$ karşlığında silebilirsiniz. Donut dükkanının yan tarafında Tenpenny'i bulabilirsiniz.";
+		document.getElementById("imagecont").style.backgroundImage = "url('image8.jpg')"; 
+	   }
+	   else if(clicked == 9)
+	   {
+	    document.getElementById("infohead").innerHTML = "Seri Katil";
+		document.getElementById("info").innerHTML = "Seri Katiller tren istasyonundaki telefon klubesinden görev alarak öldürmeleri istenilen kişileri öldürdükçe belli miktarda para kazanırlar";
+		document.getElementById("imagecont").style.backgroundImage = "url('image.jpg')"; 
+	   }
+	   else if(clicked == 10)
+	   {
+	    document.getElementById("infohead").innerHTML = "Uyuşturucu Satıcısı";
+		document.getElementById("info").innerHTML = "Uyuşturucu Satıcıları fabrikadan uyuşturucu aracına binerek şehirde dolaşıp araçtaki uyuşturucuları satarak belli miktarda para kazanırlar";
+		document.getElementById("imagecont").style.backgroundImage = "url('image.jpg')"; 
+	   }
+	   else if(clicked == 11)
+	   {
+	    document.getElementById("infohead").innerHTML = "Gaspçı";
+		document.getElementById("info").innerHTML = "Gaspçılar oyunculardan üzerinde taşıdıkları paranın bir kısmını çalabilirler";
+		document.getElementById("imagecont").style.backgroundImage = "url('image.jpg')"; 
+	   }
+	   else if(clicked == 12)
+	   {
+	    document.getElementById("infohead").innerHTML = "Terorist";
+		document.getElementById("info").innerHTML = "Teroristler araçlarına bomba kurarak onları patlatabilir ve skor kazanabilirler";
+		document.getElementById("imagecont").style.backgroundImage = "url('image.jpg')"; 
+	   }
+	   else if(clicked == 13)
+	   {
+	    document.getElementById("infohead").innerHTML = "Hacker";
+		document.getElementById("info").innerHTML = "Hackerler oyuncuların araçlarının motorunu hackliyebilir veya 10000 skora ulaştıklarında radarda görünmez olabilirler";
+		document.getElementById("imagecont").style.backgroundImage = "url('image.jpg')"; 
+	   }
+	   else if(clicked == 14)
+	   {
+	    document.getElementById("infohead").innerHTML = "Sıkça Sorulan Sorular";
+		document.getElementById("info").innerHTML = "Nasıl Para Kazanılır?<br> -Dükkan soyarak gruplara katılarak meslekleri yaparak kolayca para kazanabilirsiniz<br><br>Nasıl Dükkan Soyulur?<br> -Kasiyere nişan alarak dükkan soyabilirsiniz<br><br>Ev Nasıl Satın Alınır?<br> -Satın almak istediginiz evin ikonunun yanına gidip /satinal yazarak ev satın alabilirsiniz<br><br>Ev Fiyatları Ne Kadar?<br> -Ev fiyatları oyunda yazıyor Arcenia Hırsız Polis ev fiyatlarında değişiklik yapabilir.<br><br>Araç Nasıl Satın Alınır?<br> -Araç satın alabilmek için eviniz olmalıdır. Aracınızı galeriden bilgisayarı kullanarak satın alabilirsiniz";
+		document.getElementById("imagecont").style.backgroundImage = "url('image.jpg')"; 
+	   }
+      }
+     </script>
+   
+   
+   
+   </body>
+
+
+
+
+
+
+
+</html>

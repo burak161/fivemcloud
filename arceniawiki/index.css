@@ -1,0 +1,148 @@
+
+body
+{
+ margin: 0px;
+ padding: 0px;
+ background: url(background.jpg);
+}
+
+@font-face {
+    font-family: Roboto-Thin;
+    src: url(Roboto-Thin.ttf);
+}
+
+
+
+#menucont
+{
+ float: left;
+ height: auto;
+ width: 200px;
+ background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Menu 1 ----------------------------------------------------- */
+
+#menucont ul
+{
+ margin: 0;
+ padding: 0;
+ list-style-type: none;
+ font-family: Roboto-Thin;
+ width: 200px;
+}
+
+#menucont > ul li a
+{
+ color: #FFF;
+ line-height: 30px;
+ font-size: 20px;
+ display: block;
+ padding: 8px 16px;
+ text-decoration: none;
+}
+
+#menucont a
+{
+ color: #FFF;
+ text-decoration: none;
+}
+
+#menucont a.active
+{
+   background-color: rgba(30, 144, 255, 0.8);
+}
+
+#menucont ul li:hover
+{
+ background-color: rgba(0, 0, 0, 0.3);
+}
+
+#menucont:hover
+{
+ background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Menu 2 ----------------------------------------------------- */
+
+#menusistem
+{
+ display: none;
+ border-top: 1px solid #1E90FF;
+}
+
+#menusistem ul li a
+{
+ color: #FFF;
+ font-size: 15px;
+ display: block;
+ padding: 8px 16px;
+ text-decoration: none;
+}
+
+/* Menu 3 ----------------------------------------------------- */
+
+#menumeslek
+{
+ display: none;
+ border-top: 1px solid #1E90FF;
+}
+
+#menumeslek ul li a
+{
+ color: #FFF;
+ font-size: 15px;
+ display: block;
+ padding: 8px 16px;
+ text-decoration: none;
+}
+
+/*  ----------------------------------------------------- */
+
+
+.infocont
+{
+ float: left;
+ height: 500px;
+ width: 750px;
+ margin-left: 150px;
+ margin-top: 50px;
+ background-color: rgba(0, 0, 0, 0.5);
+}
+
+.infocont h3
+{
+ margin: 0px;
+ padding-top: 5px;
+ color: #FFF;
+ font-size: 20px;
+ text-align: center;
+ font-family: Roboto-Thin;
+}
+
+.infocont p
+{
+ color: #FFF;
+ padding-left: 5px;
+}
+
+/*  ----------------------------------------------------- */
+
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+#imagecont
+{
+ float: right;
+ background: url(image.jpg);
+ height: 500px;
+ width: 250px;
+ animation-duration: 0.5s;
+ animation-timing-function: linear;
+}
+ 
+	 
+	 
